@@ -1,10 +1,10 @@
 {%extends 'base.html' %} {%block content%}
 <header>{%include "navbar.html"%}</header>
 
-<h1>{{title}}</h1>
+<h1>{{object.title}}</h1>
 <p>
-  {% if description != None %} {{description}} {% else %} Description coming
-  soon {% endif %}
+  {% if object.description != None %} {{object.description}} {% else %}
+  Description coming soon {% endif %}
 </p>
-<p>${{price}}</p>
+<p>${{object.price}}</p>
 {%endblock%}
