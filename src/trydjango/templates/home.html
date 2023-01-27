@@ -1,20 +1,4 @@
-{%extends "base.html" %} {% block content %}
-
-<nav class="nav-bar">
-  <ul
-    style="
-      padding: 20px;
-      list-style: none;
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
-      font-size: 24px;
-    "
-  >
-    <li><a href="./home"> Home </a></li>
-    <li><a href="./about">About </a></li>
-  </ul>
-</nav>
+{%extends "base.html" %} {% block content %} {%include "navbar.html"%}
 <h1>Hello World from Home.html</h1>
 <p>this is a template</p>
 
