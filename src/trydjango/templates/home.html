@@ -2,4 +2,13 @@
 <h1>Hello World from Home.html</h1>
 <p>this is a template</p>
 
+<h1>{{myText}}, {{myNumber}}</h1>
+
+<ul>
+  <h3>Here are Our Items</h3>
+  {%for mySubItem in myList %}
+  <li>{{forloop.counter}} __ Item 0{{mySubItem}}</li>
+  {% endfor %}
+</ul>
+
 {% endblock %}
