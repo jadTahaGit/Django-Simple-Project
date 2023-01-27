@@ -1,0 +1,6 @@
+.nav-bar {
+  background-color: aqua;
+}
+.nav-bar ul {
+  display: flex;
+}
