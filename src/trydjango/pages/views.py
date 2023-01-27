@@ -9,4 +9,8 @@ def home_view_02(request,*args, **kwargs):
     return render(request, "home.html", {})
 
 def about_view(request,*args, **kwargs):
-    return render(request, "about.html", {})
+    my_context = {
+        "myText": "This is about Us",
+        "myNumber": 2023
+    }
+    return render(request, "about.html", my_context)
